@@ -4,10 +4,9 @@
   "description": "JavaScript task",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install && npx husky init && npx husky add .husky/pre-commit \"npm run check\"",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "test": "jest",
     "lint": "eslint index.js",
-    "check": "eslint index.js && jest",
     "start": "node system/system.js"
   },
   "author": "John <EternelJohn@gmail.com>",
@@ -16,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "8.22.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.1",
     "jest": "^29.2.0"
   }
 }
